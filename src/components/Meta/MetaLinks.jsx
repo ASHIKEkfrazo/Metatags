@@ -3,11 +3,13 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const MetaLinks = ({Title,Description,imageURL,description,descriptionContent}) => {
     const url = 'https://aventuras-frontend.vercel.app'
+    const urlImage = 'https://admin.aventuras.co.in'
+
   return (
     <Helmet>
     <title>{Title}</title>
     <meta property="og:title" content={Title}/>
-    <meta property="og:image" content={imageURL}/>
+    <meta property="og:image" content={urlImage + imageURL}/>
     <meta property="og:url" content={url + window.location.pathname + window.location.search}/>
     <meta property="og:description" content={description}/>
     <meta property="description" content={descriptionContent}/>

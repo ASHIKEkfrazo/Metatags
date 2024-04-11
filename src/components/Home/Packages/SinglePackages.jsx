@@ -987,14 +987,15 @@ const SinglePackages = () => {
     }
   };
 
+  console.log(value?.attributes?.package_images?.data[0]?.attributes?.url)
   return (
     <>
       <MetaLinks
-        Title={"Single Packagesss"}
+        Title={value?.attributes?.name}
         imageURL={
-          "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+          value?.attributes?.package_images?.data[0]?.attributes?.url
         }
-        description={"Single Packages lorem ipsum"}
+        description={value?.attributes?.description}
       />
 
       <Modal
