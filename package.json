@@ -48,34 +48,14 @@
     "slick-carousel": "^1.8.1",
     "strapi-sdk-javascript": "^0.3.3",
     "styled-components": "^5.3.11",
-    "web-vitals": "^2.1.4",
-    "libnss3-dev": "^3.69.0" 
-    
-    
+    "surge": "^0.23.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap"
-
-  },
-
-  "reactSnap": {
-    "inlineCss": true,
-    "removeBlobs": true,
-    "removeScriptTags": true,
-    "removeStyleTags": true
-  },
-  "puppeteer": {
-    "puppeteerOptions": {
-      "executablePath": "/usr/bin/chromium-browser",
-      "args": [
-        "--no-sandbox",
-        "--disable-setuid-sandbox"
-      ]
-    }
   },
   "eslintConfig": {
     "extends": [
