@@ -50,7 +50,6 @@
     "styled-components": "^5.3.11",
     "surge": "^0.23.1",
     "web-vitals": "^2.1.4",
-    "puppeteer": "^21.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
